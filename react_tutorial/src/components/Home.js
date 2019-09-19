@@ -5,6 +5,7 @@ export class Home extends React.Component {
     return (
       <div>
         <p>In a new Component!</p>
+        {5 == 2 ? "Yes" : "No"}
       </div>
     );
   }
