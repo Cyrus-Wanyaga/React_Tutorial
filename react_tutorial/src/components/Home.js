@@ -13,6 +13,13 @@ export class Home extends React.Component {
     this.setState({
       age: this.state.age + 3
     });
+    setTimeout(
+      () =>
+        this.setState({
+          status: 1
+        }),
+      3000
+    );
   }
   onMakeYounger() {
     this.setState({ age: this.state.age - 3 });

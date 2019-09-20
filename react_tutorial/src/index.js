@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <Header />
+        <Header homeLink="Home" />
         <Home name={"Max"} initialAge={27} />
         <p>This is a paragraph</p>
       </div>
