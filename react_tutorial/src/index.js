@@ -5,11 +5,14 @@ import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 
 class App extends React.Component {
+  onGreet() {
+    alert("Hello");
+  }
   render() {
     return (
       <div className="container">
         <Header homeLink="Home" />
-        <Home name={"Max"} initialAge={27} />
+        <Home name={"Max"} initialAge={27} greet={this.onGreet} />
         <p>This is a paragraph</p>
       </div>
     );

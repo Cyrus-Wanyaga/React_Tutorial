@@ -41,13 +41,16 @@ export class Home extends React.Component {
         >
           Make me older!
         </button>
-        <br></br>
-        <br></br>
+        <hr></hr>
         <button
           onClick={this.onMakeYounger.bind(this)}
           className="btn btn-danger btn-sm"
         >
           Make me younger!
+        </button>
+        <hr></hr>
+        <button className="btn btn-dark btn-sm" onClick={this.props.greet}>
+          Greet
         </button>
       </div>
     );
@@ -56,5 +59,6 @@ export class Home extends React.Component {
 
 Home.propTypes = {
   name: PropTypes.string,
-  initialAge: PropTypes.number
+  initialAge: PropTypes.number,
+  greet: PropTypes.func
 };
