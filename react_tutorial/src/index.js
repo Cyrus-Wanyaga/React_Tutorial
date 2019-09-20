@@ -6,14 +6,10 @@ import { Home } from "./components/Home";
 
 class App extends React.Component {
   render() {
-    let user = {
-      name: "Anna",
-      hobbies: ["Sports", "Music", "Skating"]
-    };
     return (
       <div className="container">
         <Header />
-        <Home name={"Max"} age={27} user={user} />
+        <Home name={"Max"} age={27} />
         <p>This is a paragraph</p>
       </div>
     );
